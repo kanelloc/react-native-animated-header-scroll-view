@@ -5,7 +5,7 @@ export interface AnimatedScrollViewProps extends ScrollViewProps {
   /**
    * A header component to show a navbar when scrolling to the top
    */
-  HeaderComponent?: JSX.Element;
+  HeaderComponent: JSX.Element;
 
   /**
    * An overflow header component to show a navbar when scrolling to the bottom
