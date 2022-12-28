@@ -2,7 +2,7 @@ import { Card, Header, OverflowHeaderComponent } from '../components';
 import { AnimatedScrollView } from '../../../src/components/AnimatedScrollView';
 import * as React from 'react';
 
-export const AnimatedScrollViewExample = () => {
+export const OverflowHeaderExample = () => {
   const data = Array.from(Array(20).keys());
   return (
     <AnimatedScrollView

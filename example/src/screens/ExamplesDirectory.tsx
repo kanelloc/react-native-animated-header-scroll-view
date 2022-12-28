@@ -1,24 +1,32 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
-import { useNavigation } from '@react-navigation/native';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+import type { RootStackParamList } from '../types';
+import { SCREENS } from '../utils/enums';
 
-export const ExamplesDirectory = () => {
-  const navigation: any = useNavigation();
-  const goTo = (screen: string) => {
+type Props = NativeStackScreenProps<RootStackParamList, 'ExamplesDirectory'>;
+export const ExamplesDirectory = ({ navigation }: Props) => {
+  const goTo = (screen: SCREENS) => {
     navigation.navigate(screen);
   };
 
   return (
     <View style={styles.container}>
       <TouchableOpacity
-        onPress={() => goTo('AnimatedScrollViewExample')}
+        onPress={() => goTo(SCREENS.SIMPLE_EXAMPLE)}
         style={styles.button}
       >
-        <Text>AnimatedScrollViewExample</Text>
+        <Text>SimpleExample</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => goTo(SCREENS.OVERFLOW_HEADER_EXAMPLE)}
+        style={styles.button}
+      >
+        <Text>OverflowHeaderExample</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
-        onPress={() => goTo('SafeAreaViewExample')}
+        onPress={() => goTo(SCREENS.SAFE_AREA_VIEW_EXAMPLE)}
         style={styles.button}
       >
         <Text>SafeAreaViewExample</Text>
