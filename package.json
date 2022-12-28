@@ -1,6 +1,6 @@
 {
   "name": "@kanelloc/react-native-animated-header-scroll-view",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "React native animated header scroll view component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
