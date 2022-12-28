@@ -18,7 +18,7 @@ $ npm install @kanelloc/react-native-animated-header-scroll-view
 # Usage
 ```typescript
 import { Card, Header, OverflowHeaderComponent } from '../components';
-import { AnimatedScrollView } from '@react-native-animated-header-scroll-view';
+import { AnimatedScrollView } from '@kanelloc/react-native-animated-header-scroll-view';
 import * as React from 'react';
 import { Platform } from 'react-native';
 
