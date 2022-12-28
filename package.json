@@ -48,6 +48,7 @@
   },
   "homepage": "https://github.com/kanelloc/react-native-animated-header-scroll-view#readme",
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
