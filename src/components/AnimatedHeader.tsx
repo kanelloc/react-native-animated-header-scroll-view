@@ -26,11 +26,11 @@ const AnimatedHeader = ({
       <Animated.View
         style={[
           styles.container,
+          styles.header,
           {
+            zIndex: headerOpacity,
             height: headerHeight,
             opacity: headerOpacity,
-            borderBottomWidth: StyleSheet.hairlineWidth,
-            borderBottomColor: '#a4a4a4',
           },
         ]}
       >
@@ -39,10 +39,11 @@ const AnimatedHeader = ({
       <Animated.View
         style={[
           styles.container,
+          styles.overflowHeader,
           {
+            zIndex: overflowHeaderOpacity,
             height: headerHeight,
             opacity: overflowHeaderOpacity,
-            backgroundColor: 'transparent',
           },
         ]}
       >
@@ -62,6 +63,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  header: {
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: '#a4a4a4',
+  },
+  overflowHeader: {
+    backgroundColor: 'transparent',
   },
 });
 
