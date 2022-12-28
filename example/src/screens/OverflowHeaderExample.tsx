@@ -1,7 +1,7 @@
 import { Card, Header, OverflowHeaderComponent } from '../components';
 import * as React from 'react';
 import { Platform } from 'react-native';
-import { AnimatedScrollView } from 'react-native-animated-header-scroll-view';
+import { AnimatedScrollView } from '@kanelloc/react-native-animated-header-scroll-view';
 const isIos = Platform.OS === 'ios';
 
 export const OverflowHeaderExample = () => {
