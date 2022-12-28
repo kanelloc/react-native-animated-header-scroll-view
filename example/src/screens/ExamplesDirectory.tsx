@@ -20,6 +20,7 @@ export const ExamplesDirectory = ({ navigation }: Props) => {
       {examples.map((e) => {
         return (
           <TouchableOpacity
+            key={e.screen}
             onPress={() => goTo(e.screen)}
             style={styles.button}
           >
