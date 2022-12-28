@@ -13,11 +13,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: git config
         run: |
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git config user.name "kanelloc-deploy"
+          git config user.email "${{secrets.DEPLOY_EMAIL}}"
+
+      - run: >
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -33,3 +38,9 @@ jobs:
 
       - name: Build package
         run: yarn prepack
+
+      - name: NPM release
+        run: yarn release-ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+
