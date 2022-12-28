@@ -47,8 +47,8 @@ You can find a set of detailed examples [here](https://github.com/kanelloc/react
 | `HeaderComponent`         | A header component to show a navbar when scrolling to the top              | JSX.Element         | true     |
 | `OverflowHeaderComponent` | An overflow header component to show a navbar when scrolling to the bottom | JSX.Element         | false    |
 | `ForegroundComponent`     | A foreground component to show on top of the image                         | JSX.Element         | false    |
-| `headerImgHeight`         | Height of the scrollable image. Default value is 300                       | number              | false    |
-| `headerHeight`            | Height of the navbar header. Default value is 90                           | number              | false    |
+| `headerMaxHeight`         | Header maximum height. Default value is 300                                | number              | false    |
+| `headerMinHeight`         | Header minimum height. Default value is 90                                 | number              | false    |
 | `headerImage`             | Image header source                                                        | ImageSourcePropType | false    |
 
 

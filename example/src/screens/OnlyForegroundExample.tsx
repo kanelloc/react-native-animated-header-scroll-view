@@ -8,7 +8,7 @@ export const OnlyForegroundExample = () => {
   return (
     <AnimatedScrollView
       ForegroundComponent={<ForegroundComponent />}
-      headerHeight={isIOS ? 90 : 70}
+      headerMinHeight={isIOS ? 90 : 70}
       OverflowHeaderComponent={<OverflowHeaderComponent />}
       HeaderComponent={<Header />}
     >

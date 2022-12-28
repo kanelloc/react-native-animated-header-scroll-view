@@ -20,12 +20,12 @@ export interface AnimatedScrollViewProps extends ScrollViewProps {
   /**
    * Height of the scrollable image. Default value is 300
    */
-  headerImgHeight?: number;
+  headerMaxHeight?: number;
 
   /**
    * Height of the navbar header. Default value is 90
    */
-  headerHeight?: number;
+  headerMinHeight?: number;
 
   /**
    * @see https://reactnative.dev/docs/image#source

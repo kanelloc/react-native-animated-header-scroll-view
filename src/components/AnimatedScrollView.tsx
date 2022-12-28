@@ -15,15 +15,15 @@ export const AnimatedScrollView = ({
   HeaderComponent,
   OverflowHeaderComponent,
   ForegroundComponent,
-  headerImgHeight,
-  headerHeight,
+  headerMaxHeight,
+  headerMinHeight,
   headerImage,
   children,
   ...props
 }: AnimatedScrollViewProps) => {
   const { width } = useWindowDimensions();
-  const imageHeight = headerImgHeight || IMG_HEADER_HEIGHT;
-  const headerNavHeight = headerHeight || HEADER_HEIGHT;
+  const imageHeight = headerMaxHeight || IMG_HEADER_HEIGHT;
+  const headerNavHeight = headerMinHeight || HEADER_HEIGHT;
   const [scroll, onScroll, scale, translateYDown, translateYUp] =
     useAnimateScrollView(imageHeight);
 

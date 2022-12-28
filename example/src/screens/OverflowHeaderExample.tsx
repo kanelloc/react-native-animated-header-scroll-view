@@ -6,8 +6,8 @@ import { data, isIOS } from '../utils';
 export const OverflowHeaderExample = () => {
   return (
     <AnimatedScrollView
-      headerImgHeight={400}
-      headerHeight={isIOS ? 90 : 70}
+      headerMaxHeight={400}
+      headerMinHeight={isIOS ? 90 : 70}
       OverflowHeaderComponent={<OverflowHeaderComponent />}
       HeaderComponent={<Header />}
       headerImage={require('../../assets/cabin.jpg')}
