@@ -1,7 +1,5 @@
 import * as React from 'react';
-import { Card } from './components/Card';
-import { Header } from './components/Header';
-import { OverflowHeaderComponent } from './components/OverflowHeaderComponent';
+import { Card, Header, OverflowHeaderComponent } from './components';
 import { AnimatedScrollView } from '../../src/components/AnimatedScrollView';
 
 const App = () => {
