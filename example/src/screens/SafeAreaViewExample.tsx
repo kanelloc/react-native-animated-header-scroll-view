@@ -1,8 +1,8 @@
-import { AnimatedScrollView } from '../../../src/components/AnimatedScrollView';
 import { Card, Header, OverflowHeaderComponent } from '../components';
 import * as React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StyleSheet } from 'react-native';
+import { AnimatedScrollView } from 'react-native-animated-header-scroll-view';
 
 export const SafeAreaViewExample = () => {
   const data = Array.from(Array(20).keys());
