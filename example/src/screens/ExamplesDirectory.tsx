@@ -13,6 +13,7 @@ export const ExamplesDirectory = ({ navigation }: Props) => {
   const examples = [
     { screen: SCREENS.OVERFLOW_HEADER_EXAMPLE },
     { screen: SCREENS.SAFE_AREA_VIEW_EXAMPLE },
+    { screen: SCREENS.IMAGE_FOREGROUND_EXAMPLE },
   ];
 
   return (
