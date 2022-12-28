@@ -10,27 +10,23 @@ export const ExamplesDirectory = ({ navigation }: Props) => {
     navigation.navigate(screen);
   };
 
+  const examples = [
+    { screen: SCREENS.OVERFLOW_HEADER_EXAMPLE },
+    { screen: SCREENS.SAFE_AREA_VIEW_EXAMPLE },
+  ];
+
   return (
     <View style={styles.container}>
-      <TouchableOpacity
-        onPress={() => goTo(SCREENS.SIMPLE_EXAMPLE)}
-        style={styles.button}
-      >
-        <Text>SimpleExample</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={() => goTo(SCREENS.OVERFLOW_HEADER_EXAMPLE)}
-        style={styles.button}
-      >
-        <Text>OverflowHeaderExample</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity
-        onPress={() => goTo(SCREENS.SAFE_AREA_VIEW_EXAMPLE)}
-        style={styles.button}
-      >
-        <Text>SafeAreaViewExample</Text>
-      </TouchableOpacity>
+      {examples.map((e) => {
+        return (
+          <TouchableOpacity
+            onPress={() => goTo(e.screen)}
+            style={styles.button}
+          >
+            <Text>{e.screen}</Text>
+          </TouchableOpacity>
+        );
+      })}
     </View>
   );
 };

@@ -5,7 +5,6 @@ import { OverflowHeaderExample } from './screens/OverflowHeaderExample';
 import { ExamplesDirectory } from './screens/ExamplesDirectory';
 import { SafeAreaViewExample } from './screens/SafeAreaViewExample';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { SimpleExample } from './screens/SimpleExample';
 import type { RootStackParamList } from './types';
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
             name="OverflowHeaderExample"
             component={OverflowHeaderExample}
           />
-          <Stack.Screen name="SimpleExample" component={SimpleExample} />
           <Stack.Screen
             name="SafeAreaViewExample"
             component={SafeAreaViewExample}
