@@ -7,10 +7,21 @@ export const ExamplesDirectory = () => {
   const goTo = (screen: string) => {
     navigation.navigate(screen);
   };
+
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => goTo('AnimatedScrollViewExample')}>
-        <Text>TEST</Text>
+      <TouchableOpacity
+        onPress={() => goTo('AnimatedScrollViewExample')}
+        style={styles.button}
+      >
+        <Text>AnimatedScrollViewExample</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => goTo('SafeAreaViewExample')}
+        style={styles.button}
+      >
+        <Text>SafeAreaViewExample</Text>
       </TouchableOpacity>
     </View>
   );
@@ -19,6 +30,15 @@ export const ExamplesDirectory = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  button: {
+    marginTop: 8,
+    padding: 16,
+    borderWidth: 1,
+    borderRadius: 24,
+    width: 240,
     alignItems: 'center',
     justifyContent: 'center',
   },

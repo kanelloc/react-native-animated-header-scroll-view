@@ -2,18 +2,15 @@ import { RoundButton } from './RoundButton';
 import { StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import * as React from 'react';
 import ArrowLeft from '../icons/ArrowLeft';
+import { useNavigation } from '@react-navigation/native';
 
 export const Header = () => {
   const { width } = useWindowDimensions();
+  const nav = useNavigation();
   return (
     <View style={styles.container}>
       <View style={{ width: width / 3 }}>
-        <RoundButton
-          icon={<ArrowLeft />}
-          onPress={() => {
-            console.log('PRESS');
-          }}
-        />
+        <RoundButton icon={<ArrowLeft />} onPress={nav.goBack} />
       </View>
       <View
         style={[
