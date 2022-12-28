@@ -12,7 +12,7 @@ A performant animated ScrollView component that:
 
 # Installation
 ```sh
-$ npm install --save-dev react-native-animated-header-scroll-view
+$ npm install @kanelloc/react-native-animated-header-scroll-view
 ```
 
 # Usage
