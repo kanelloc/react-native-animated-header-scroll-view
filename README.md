@@ -42,13 +42,14 @@ You can find a set of detailed examples [here](https://github.com/kanelloc/react
 
 # Props
 
-| Prop name                 | Description                                                                                         | Type                                                        | Required |
-|---------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------|----------|
-| `HeaderComponent`         | A header component to show a navbar when scrolling to the top                                       | JSX.Element                                                 | true     |
-| `OverflowHeaderComponent` | An overflow header component to show a navbar when scrolling to the bottom                          | JSX.Element                                                 | false    |
-| `headerImgHeight`         | Height of the scrollable image. Default value is 300                                                | number                                                      | false    |
-| `headerHeight`            | Height of the navbar header. Default value is 90                                                    | number                                                      | false    |
-| `headerImage`             | Image header source                                                                                 | ImageSourcePropType                                         | false    |
+| Prop name                 | Description                                                                | Type                | Required |
+|---------------------------|----------------------------------------------------------------------------|---------------------|----------|
+| `HeaderComponent`         | A header component to show a navbar when scrolling to the top              | JSX.Element         | true     |
+| `OverflowHeaderComponent` | An overflow header component to show a navbar when scrolling to the bottom | JSX.Element         | false    |
+| `ForegroundComponent`     | A foreground component to show on top of the image                         | JSX.Element         | false    |
+| `headerImgHeight`         | Height of the scrollable image. Default value is 300                       | number              | false    |
+| `headerHeight`            | Height of the navbar header. Default value is 90                           | number              | false    |
+| `headerImage`             | Image header source                                                        | ImageSourcePropType | false    |
 
 
 

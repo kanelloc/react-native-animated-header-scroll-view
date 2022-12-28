@@ -1,12 +1,13 @@
+import { AnimatedScrollView } from '@kanelloc/react-native-animated-header-scroll-view';
 import { Card, Header, OverflowHeaderComponent } from '../components';
 import * as React from 'react';
-import { AnimatedScrollView } from '@kanelloc/react-native-animated-header-scroll-view';
+import { ForegroundComponent } from '../components/ForegroundComponent';
 import { data, isIOS } from '../utils';
 
-export const OverflowHeaderExample = () => {
+export const ImageForegroundExample = () => {
   return (
     <AnimatedScrollView
-      headerImgHeight={400}
+      ForegroundComponent={<ForegroundComponent />}
       headerHeight={isIOS ? 90 : 70}
       OverflowHeaderComponent={<OverflowHeaderComponent />}
       HeaderComponent={<Header />}
