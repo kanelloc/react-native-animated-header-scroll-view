@@ -20,7 +20,6 @@ $ npm install @kanelloc/react-native-animated-header-scroll-view
 import { Card, Header, OverflowHeaderComponent } from '../components';
 import { AnimatedScrollView } from '@kanelloc/react-native-animated-header-scroll-view';
 import * as React from 'react';
-import { Platform } from 'react-native';
 
 export const App = () => {
   const data = Array.from(Array(20).keys());
