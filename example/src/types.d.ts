@@ -4,4 +4,5 @@ export type RootStackParamList = {
   SafeAreaViewExample: undefined;
   SimpleExample: undefined;
   ImageForegroundExample: undefined;
+  OnlyForegroundExample: undefined;
 };

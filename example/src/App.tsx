@@ -7,6 +7,7 @@ import { SafeAreaViewExample } from './screens/SafeAreaViewExample';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import type { RootStackParamList } from './types';
 import { ImageForegroundExample } from './screens/ImageForegroundExample';
+import { OnlyForegroundExample } from './screens/OnlyForegroundExample';
 
 const App = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -30,6 +31,10 @@ const App = () => {
           <Stack.Screen
             name="ImageForegroundExample"
             component={ImageForegroundExample}
+          />
+          <Stack.Screen
+            name="OnlyForegroundExample"
+            component={OnlyForegroundExample}
           />
         </Stack.Navigator>
       </NavigationContainer>

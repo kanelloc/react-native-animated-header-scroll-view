@@ -47,21 +47,40 @@ export const AnimatedScrollView = ({
           ]}
         >
           {ForegroundComponent ? (
-            <AnimatedImageBackground
-              source={headerImage}
-              style={[
-                { height: imageHeight, width: width * 1.2 },
-                {
-                  transform: [
-                    { scale },
-                    { translateY: translateYUp },
-                    { translateY: translateYDown },
-                  ],
-                },
-              ]}
-            >
-              {ForegroundComponent}
-            </AnimatedImageBackground>
+            <>
+              {headerImage ? (
+                <AnimatedImageBackground
+                  source={headerImage}
+                  style={[
+                    { height: imageHeight, width: width * 1.2 },
+                    {
+                      transform: [
+                        { scale },
+                        { translateY: translateYUp },
+                        { translateY: translateYDown },
+                      ],
+                    },
+                  ]}
+                >
+                  {ForegroundComponent}
+                </AnimatedImageBackground>
+              ) : (
+                <Animated.View
+                  style={[
+                    { height: imageHeight, width: width * 1.2 },
+                    {
+                      transform: [
+                        { scale },
+                        { translateY: translateYUp },
+                        { translateY: translateYDown },
+                      ],
+                    },
+                  ]}
+                >
+                  {ForegroundComponent}
+                </Animated.View>
+              )}
+            </>
           ) : (
             <Animated.Image
               source={headerImage}
