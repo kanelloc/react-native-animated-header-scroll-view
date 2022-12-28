@@ -22,7 +22,7 @@ import { AnimatedScrollView } from '@react-native-animated-header-scroll-view';
 import * as React from 'react';
 import { Platform } from 'react-native';
 
-export const OverflowHeaderExample = () => {
+export const App = () => {
   const data = Array.from(Array(20).keys());
   return (
     <AnimatedScrollView
