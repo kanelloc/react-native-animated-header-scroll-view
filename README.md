@@ -3,9 +3,9 @@
 [![NPM version][npm-image]][npm-url] [![npm][license-url]][npm-url] [![npm][types-url]][npm-url] [![runs with expo][expo-image]][expo-url]
 
 A performant animated ScrollView component that:
-* 🔥Supports both iOS and Android devices
 * 🔥Animates an image into a navbar header
 * 🔥Supports bounce animation on scroll down
+* 🔥Supports both iOS and Android devices
 
 ![React Native Animated Header ScrollView](./preview-ios.gif)
 
