@@ -1,31 +1,25 @@
 import * as React from 'react';
+import { Card } from './components/Card';
+import { Header } from './components/Header';
+import { OverflowHeaderComponent } from './components/OverflowHeaderComponent';
+import { AnimatedScrollView } from '../../src/components/AnimatedScrollView';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-animated-header-scroll-view';
-
-export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+const App = () => {
+  const data = Array.from(Array(20).keys());
 
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <AnimatedScrollView
+      headerImgHeight={400}
+      headerHeight={90}
+      OverflowHeaderComponent={<OverflowHeaderComponent />}
+      HeaderComponent={<Header />}
+      headerImage={require('../assets/cabin.jpg')}
+    >
+      {data.map((e) => {
+        return <Card item={e} key={e} />;
+      })}
+    </AnimatedScrollView>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
-});
+export default App;
