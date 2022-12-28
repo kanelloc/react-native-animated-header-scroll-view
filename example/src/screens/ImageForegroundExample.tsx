@@ -8,7 +8,6 @@ export const ImageForegroundExample = () => {
   return (
     <AnimatedScrollView
       ForegroundComponent={<ForegroundComponent />}
-      headerImgHeight={200}
       headerHeight={isIOS ? 90 : 70}
       OverflowHeaderComponent={<OverflowHeaderComponent />}
       HeaderComponent={<Header />}
