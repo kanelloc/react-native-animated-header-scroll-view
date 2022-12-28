@@ -1,31 +1,14 @@
-# react-native-animated-header-scroll-view
+# React Native Animated header ScrollView
 
-React native animated scrollview which transitions an image or a component into a header
+[![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
 
-## Installation
+A performant animated ScrollView component that:
+* Supports both iOS and Android devices
+* Animates an image into a navbar header
+* Supports bounce animation on scroll down
 
+
+# Installation
 ```sh
-npm install react-native-animated-header-scroll-view
+$ npm install --save-dev react-native-animated-header-scroll-view
 ```
-
-## Usage
-
-```js
-import { multiply } from 'react-native-animated-header-scroll-view';
-
-// ...
-
-const result = await multiply(3, 7);
-```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
