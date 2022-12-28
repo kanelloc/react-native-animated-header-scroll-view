@@ -3,15 +3,11 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 
 type Props = {
   icon: JSX.Element;
+  onPress: () => void;
 };
-export const RoundButton = ({ icon }: Props) => {
+export const RoundButton = ({ icon, onPress }: Props) => {
   return (
-    <TouchableOpacity
-      style={styles.container}
-      onPress={() => {
-        console.log('PRESS');
-      }}
-    >
+    <TouchableOpacity style={styles.container} onPress={onPress}>
       {icon}
     </TouchableOpacity>
   );

@@ -4,16 +4,18 @@ import * as React from 'react';
 import ArrowLeft from '../icons/ArrowLeft';
 import { ArrowRight } from '../icons/ArrowRight';
 import { Share } from '../icons/Share';
+import { useNavigation } from '@react-navigation/native';
 
 export const OverflowHeaderComponent = () => {
+  const nav = useNavigation();
   return (
     <View style={styles.container}>
-      <RoundButton icon={<ArrowLeft />} />
-      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-        <View style={{ marginRight: 8 }}>
-          <RoundButton icon={<ArrowRight />} />
+      <RoundButton icon={<ArrowLeft />} onPress={nav.goBack} />
+      <View style={styles.btnRightContainer}>
+        <View style={styles.btnRight}>
+          <RoundButton icon={<ArrowRight />} onPress={() => null} />
         </View>
-        <RoundButton icon={<Share />} />
+        <RoundButton icon={<Share />} onPress={() => null} />
       </View>
     </View>
   );
@@ -25,5 +27,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     flexDirection: 'row',
     justifyContent: 'space-between',
+  },
+  btnRightContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  btnRight: {
+    marginRight: 8,
   },
 });

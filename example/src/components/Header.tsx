@@ -8,7 +8,12 @@ export const Header = () => {
   return (
     <View style={styles.container}>
       <View style={{ width: width / 3 }}>
-        <RoundButton icon={<ArrowLeft />} />
+        <RoundButton
+          icon={<ArrowLeft />}
+          onPress={() => {
+            console.log('PRESS');
+          }}
+        />
       </View>
       <View
         style={[
