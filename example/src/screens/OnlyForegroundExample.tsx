@@ -7,6 +7,7 @@ import { data, isIOS } from '../utils';
 export const OnlyForegroundExample = () => {
   return (
     <AnimatedScrollView
+      disableScale={true}
       ForegroundComponent={<ForegroundComponent />}
       headerMinHeight={isIOS ? 90 : 70}
       OverflowHeaderComponent={<OverflowHeaderComponent />}

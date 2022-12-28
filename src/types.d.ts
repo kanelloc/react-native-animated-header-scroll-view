@@ -31,6 +31,7 @@ export interface AnimatedScrollViewProps extends ScrollViewProps {
    * @see https://reactnative.dev/docs/image#source
    */
   headerImage?: ImageSourcePropType;
+  disableScale?: boolean;
 }
 
 export interface AnimatedHeaderProps {

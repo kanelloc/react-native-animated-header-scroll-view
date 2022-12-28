@@ -50,6 +50,7 @@ You can find a set of detailed examples [here](https://github.com/kanelloc/react
 | `headerMaxHeight`         | Header maximum height. Default value is 300                                | number              | false    |
 | `headerMinHeight`         | Header minimum height. Default value is 90                                 | number              | false    |
 | `headerImage`             | Image header source                                                        | ImageSourcePropType | false    |
+| `disableScale`            | Disables header scaling when scrolling. Default value is false             | boolean             | false    |
 
 
 

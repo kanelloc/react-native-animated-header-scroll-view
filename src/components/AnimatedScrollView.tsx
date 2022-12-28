@@ -18,6 +18,7 @@ export const AnimatedScrollView = ({
   headerMaxHeight,
   headerMinHeight,
   headerImage,
+  disableScale,
   children,
   ...props
 }: AnimatedScrollViewProps) => {
@@ -25,7 +26,7 @@ export const AnimatedScrollView = ({
   const imageHeight = headerMaxHeight || IMG_HEADER_HEIGHT;
   const headerNavHeight = headerMinHeight || HEADER_HEIGHT;
   const [scroll, onScroll, scale, translateYDown, translateYUp] =
-    useAnimateScrollView(imageHeight);
+    useAnimateScrollView(imageHeight, disableScale);
 
   const AnimatedImageBackground =
     Animated.createAnimatedComponent(ImageBackground);

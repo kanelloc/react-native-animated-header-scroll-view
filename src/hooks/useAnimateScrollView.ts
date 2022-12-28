@@ -1,7 +1,10 @@
 import { useRef } from 'react';
 import { Animated } from 'react-native';
 
-export const useAnimateScrollView = (imageHeight: number) => {
+export const useAnimateScrollView = (
+  imageHeight: number,
+  disableScale?: boolean
+) => {
   const scroll = useRef(new Animated.Value(0)).current;
 
   const scale = scroll.interpolate({
@@ -27,5 +30,11 @@ export const useAnimateScrollView = (imageHeight: number) => {
     { useNativeDriver: true }
   );
 
-  return [scroll, onScroll, scale, translateYDown, translateYUp] as const;
+  return [
+    scroll,
+    onScroll,
+    disableScale ? 1 : scale,
+    translateYDown,
+    translateYUp,
+  ] as const;
 };
