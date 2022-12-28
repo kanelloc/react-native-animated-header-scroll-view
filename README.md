@@ -41,15 +41,15 @@ You can find a set of detailed examples [here](https://github.com/kanelloc/react
 
 # Props
 
-| Prop name                 | Description                                                                               | Type                | Required |
-|---------------------------|-------------------------------------------------------------------------------------------|---------------------|----------|
-| `HeaderComponent`         | A header component to show a navbar when scrolling to the top                             | JSX.Element         | true     |
-| `OverflowHeaderComponent` | An overflow header component to show a navbar on top of image or the Foreground component | JSX.Element         | false    |
-| `ForegroundComponent`     | A foreground component to show on top of the image. You can also use it without an image  | JSX.Element         | false    |
-| `headerMaxHeight`         | Header maximum height. Default value is 300                                               | number              | false    |
-| `headerMinHeight`         | Header minimum height. Default value is 90                                                | number              | false    |
-| `headerImage`             | Image header source                                                                       | ImageSourcePropType | false    |
-| `disableScale`            | Disables header scaling when scrolling. Default value is false                            | boolean             | false    |
+| Prop name                 | Description                                                                                                        | Type                | Required |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------|---------------------|----------|
+| `HeaderComponent`         | A header component to show a navbar when scrolling to the top                                                      | JSX.Element         | true     |
+| `OverflowHeaderComponent` | An overflow header component to show a navbar on top of the header image or the Foreground component               | JSX.Element         | false    |
+| `ForegroundComponent`     | A foreground component to show on top of the image. You can also use it without an image as a standalone component | JSX.Element         | false    |
+| `headerMaxHeight`         | Header maximum height. Default value is 300                                                                        | number              | false    |
+| `headerMinHeight`         | Header minimum height. Default value is 90                                                                         | number              | false    |
+| `headerImage`             | Image header source                                                                                                | ImageSourcePropType | false    |
+| `disableScale`            | Disables header scaling when scrolling. Default value is false                                                     | boolean             | false    |
 
 
 
