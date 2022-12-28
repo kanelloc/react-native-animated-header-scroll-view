@@ -1,6 +1,6 @@
 # React Native Animated Header ScrollView
 
-[![npm](https://img.shields.io/npm/l/@kanelloc/react-native-animated-header-scroll-view?style=flat-square)](https://www.npmjs.com/package/@kanelloc/react-native-animated-header-scroll-view) [![npm](https://img.shields.io/badge/types-included-blue?style=flat-square)](https://www.npmjs.com/package/@kanelloc/react-native-animated-header-scroll-view) [![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
+[![NPM version][npm-image]][npm-url] [![npm][license-url]][npm-url] [![npm][types-url]][npm-url] [![runs with expo][expo-image]][expo-url]
 
 A performant animated ScrollView component that:
 * 🔥Supports both iOS and Android devices
@@ -59,3 +59,10 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 # License
 
 MIT
+
+[npm-url]: https://www.npmjs.com/package/@kanelloc/react-native-animated-header-scroll-view
+[npm-image]: https://img.shields.io/npm/v/@kanelloc/react-native-animated-header-scroll-view?style=flat-square
+[license-url]: https://img.shields.io/npm/l/@kanelloc/react-native-animated-header-scroll-view?style=flat-square
+[types-url]: https://img.shields.io/badge/types-included-blue?style=flat-square
+[expo-image]: https://img.shields.io/badge/Runs%20with%20Expo-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000
+[expo-url]: https://expo.io
