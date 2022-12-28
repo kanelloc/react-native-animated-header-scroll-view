@@ -3,9 +3,9 @@ import * as React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StyleSheet } from 'react-native';
 import { AnimatedScrollView } from '@kanelloc/react-native-animated-header-scroll-view';
+import { data } from '../utils';
 
 export const SafeAreaViewExample = () => {
-  const data = Array.from(Array(20).keys());
   return (
     <SafeAreaView style={styles.container} edges={['bottom']}>
       <AnimatedScrollView
