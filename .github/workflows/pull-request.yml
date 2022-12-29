@@ -1,4 +1,4 @@
-name: CI
+name: PR check
 on: [pull_request]
 
 concurrency:
