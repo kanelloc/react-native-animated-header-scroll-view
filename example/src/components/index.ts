@@ -1,4 +1,4 @@
 export { Card } from './Card';
-export { Header } from './Header';
-export { OverflowHeaderComponent } from './OverflowHeaderComponent';
+export { TopNavBar } from './TopNavBar';
+export { HeaderNavBar } from './HeaderNavBar';
 export { RoundButton } from './RoundButton';

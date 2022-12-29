@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { OverflowHeaderExample } from './screens/OverflowHeaderExample';
+import { HeaderNavBarExample } from './screens/HeaderNavBarExample';
 import { ExamplesDirectory } from './screens/ExamplesDirectory';
 import { SafeAreaViewExample } from './screens/SafeAreaViewExample';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -21,8 +21,8 @@ const App = () => {
             component={ExamplesDirectory}
           />
           <Stack.Screen
-            name="OverflowHeaderExample"
-            component={OverflowHeaderExample}
+            name="HeaderNavBarExample"
+            component={HeaderNavBarExample}
           />
           <Stack.Screen
             name="SafeAreaViewExample"

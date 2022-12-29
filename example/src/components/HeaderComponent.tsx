@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-export const ForegroundComponent = () => (
+export const HeaderComponent = () => (
   <View style={styles.container}>
     <View style={styles.titleContainer}>
       <Text>Foreground component</Text>

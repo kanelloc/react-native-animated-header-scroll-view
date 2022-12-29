@@ -6,7 +6,7 @@ import { ArrowRight } from '../icons/ArrowRight';
 import { Share } from '../icons/Share';
 import { useNavigation } from '@react-navigation/native';
 
-export const OverflowHeaderComponent = () => {
+export const HeaderNavBar = () => {
   const nav = useNavigation();
   return (
     <View style={styles.container}>

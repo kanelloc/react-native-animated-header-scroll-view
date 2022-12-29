@@ -1,6 +1,6 @@
 export type RootStackParamList = {
   ExamplesDirectory: undefined;
-  OverflowHeaderExample: undefined;
+  HeaderNavBarExample: undefined;
   SafeAreaViewExample: undefined;
   SimpleExample: undefined;
   ImageForegroundExample: undefined;

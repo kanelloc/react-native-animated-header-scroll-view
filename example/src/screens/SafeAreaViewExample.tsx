@@ -1,4 +1,4 @@
-import { Card, Header, OverflowHeaderComponent } from '../components';
+import { Card, TopNavBar, HeaderNavBar } from '../components';
 import * as React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StyleSheet } from 'react-native';
@@ -9,8 +9,8 @@ export const SafeAreaViewExample = () => {
   return (
     <SafeAreaView style={styles.container} edges={['bottom']}>
       <AnimatedScrollView
-        HeaderNavbarComponent={<OverflowHeaderComponent />}
-        TopNavBarComponent={<Header />}
+        HeaderNavbarComponent={<HeaderNavBar />}
+        TopNavBarComponent={<TopNavBar />}
         headerImage={require('../../assets/cabin.jpg')}
       >
         {data.map((e) => {

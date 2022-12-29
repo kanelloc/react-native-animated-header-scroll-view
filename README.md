@@ -17,7 +17,7 @@ $ npm install @kanelloc/react-native-animated-header-scroll-view
 
 # Usage
 ```typescript
-import { Card, Header, OverflowHeaderComponent } from '../components';
+import { Card, TopNavBar, HeaderNavBar } from '../components';
 import { AnimatedScrollView } from '@kanelloc/react-native-animated-header-scroll-view';
 import * as React from 'react';
 
@@ -25,8 +25,8 @@ export const App = () => {
   const data = Array.from(Array(20).keys());
   return (
     <AnimatedScrollView
-      HeaderNavbarComponent={<OverflowHeaderComponent />}
-      TopNavBarComponent={<Header />}
+      HeaderNavbarComponent={<HeaderNavBar />}
+      TopNavBarComponent={<TopNavBar />}
       headerImage={require('../../assets/cabin.jpg')}
     >
       {data.map((e) => {

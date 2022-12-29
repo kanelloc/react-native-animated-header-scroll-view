@@ -4,7 +4,7 @@ import * as React from 'react';
 import ArrowLeft from '../icons/ArrowLeft';
 import { useNavigation } from '@react-navigation/native';
 
-export const Header = () => {
+export const TopNavBar = () => {
   const { width } = useWindowDimensions();
   const nav = useNavigation();
   return (
