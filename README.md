@@ -25,8 +25,8 @@ export const App = () => {
   const data = Array.from(Array(20).keys());
   return (
     <AnimatedScrollView
-      OverflowHeaderComponent={<OverflowHeaderComponent />}
-      HeaderComponent={<Header />}
+      OverflowNavbarComponent={<OverflowHeaderComponent />}
+      TopNavBarComponent={<Header />}
       headerImage={require('../../assets/cabin.jpg')}
     >
       {data.map((e) => {
