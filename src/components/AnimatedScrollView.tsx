@@ -12,11 +12,11 @@ import type { AnimatedScrollViewProps } from '../types';
 import { useAnimateScrollView } from '../hooks/useAnimateScrollView';
 
 export const AnimatedScrollView = ({
+  TopNavBarComponent,
+  OverflowNavbarComponent,
   HeaderComponent,
-  OverflowHeaderComponent,
-  ForegroundComponent,
   headerMaxHeight,
-  headerMinHeight,
+  topBarHeight,
   headerImage,
   disableScale,
   children,
@@ -24,7 +24,7 @@ export const AnimatedScrollView = ({
 }: AnimatedScrollViewProps) => {
   const { width } = useWindowDimensions();
   const imageHeight = headerMaxHeight || IMG_HEADER_HEIGHT;
-  const headerNavHeight = headerMinHeight || HEADER_HEIGHT;
+  const headerNavHeight = topBarHeight || HEADER_HEIGHT;
   const [scroll, onScroll, scale, translateYDown, translateYUp] =
     useAnimateScrollView(imageHeight, disableScale);
 
@@ -47,7 +47,7 @@ export const AnimatedScrollView = ({
             },
           ]}
         >
-          {ForegroundComponent ? (
+          {HeaderComponent ? (
             <>
               {headerImage ? (
                 <AnimatedImageBackground
@@ -63,7 +63,7 @@ export const AnimatedScrollView = ({
                     },
                   ]}
                 >
-                  {ForegroundComponent}
+                  {HeaderComponent}
                 </AnimatedImageBackground>
               ) : (
                 <Animated.View
@@ -78,7 +78,7 @@ export const AnimatedScrollView = ({
                     },
                   ]}
                 >
-                  {ForegroundComponent}
+                  {HeaderComponent}
                 </Animated.View>
               )}
             </>
@@ -104,8 +104,8 @@ export const AnimatedScrollView = ({
         headerHeight={headerNavHeight}
         scroll={scroll}
         imageHeight={imageHeight}
-        OverflowHeaderComponent={OverflowHeaderComponent}
-        HeaderComponent={HeaderComponent}
+        OverflowHeaderComponent={OverflowNavbarComponent}
+        HeaderComponent={TopNavBarComponent}
       />
     </>
   );

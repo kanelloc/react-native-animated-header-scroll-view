@@ -7,10 +7,10 @@ import { data, isIOS } from '../utils';
 export const ImageForegroundExample = () => {
   return (
     <AnimatedScrollView
-      ForegroundComponent={<ForegroundComponent />}
-      headerMinHeight={isIOS ? 90 : 70}
-      OverflowHeaderComponent={<OverflowHeaderComponent />}
-      HeaderComponent={<Header />}
+      HeaderComponent={<ForegroundComponent />}
+      topBarHeight={isIOS ? 90 : 70}
+      OverflowNavbarComponent={<OverflowHeaderComponent />}
+      TopNavBarComponent={<Header />}
       headerImage={require('../../assets/cabin.jpg')}
     >
       {data.map((e) => {

@@ -3,34 +3,36 @@ import { Animated, ImageSourcePropType } from 'react-native';
 
 export interface AnimatedScrollViewProps extends ScrollViewProps {
   /**
-   * A header component to show a navbar when scrolling to the top
+   * Rendered on top of the screen as a navbar when scrolling to the top
    */
-  HeaderComponent: JSX.Element;
+  TopNavBarComponent: JSX.Element;
 
   /**
-   * A Component to show on top of the image.
+   * A component to use on top of header image. It can also be used
+   * without header image to render a custom component as header.
    */
-  ForegroundComponent?: JSX.Element;
+  HeaderComponent?: JSX.Element;
 
   /**
-   * An overflow header component to show a navbar when scrolling to the bottom
+   * Rendered on top of the header. Transitions to TopNavbarComponent as you scroll
    */
-  OverflowHeaderComponent?: JSX.Element;
+  OverflowNavbarComponent?: JSX.Element;
 
   /**
-   * Height of the scrollable image. Default value is 300
+   * Height of the header (headerImage or HeaderComponent). Default value is 300
    */
   headerMaxHeight?: number;
 
   /**
-   * Height of the navbar header. Default value is 90
+   * Height of the top navbar. Default value is 90
    */
-  headerMinHeight?: number;
+  topBarHeight?: number;
 
   /**
    * @see https://reactnative.dev/docs/image#source
    */
   headerImage?: ImageSourcePropType;
+
   /**
    * Disables header scaling when scrolling
    */

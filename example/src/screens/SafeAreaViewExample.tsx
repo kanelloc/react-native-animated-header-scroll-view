@@ -9,8 +9,8 @@ export const SafeAreaViewExample = () => {
   return (
     <SafeAreaView style={styles.container} edges={['bottom']}>
       <AnimatedScrollView
-        OverflowHeaderComponent={<OverflowHeaderComponent />}
-        HeaderComponent={<Header />}
+        OverflowNavbarComponent={<OverflowHeaderComponent />}
+        TopNavBarComponent={<Header />}
         headerImage={require('../../assets/cabin.jpg')}
       >
         {data.map((e) => {

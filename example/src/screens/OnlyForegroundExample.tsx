@@ -8,10 +8,10 @@ export const OnlyForegroundExample = () => {
   return (
     <AnimatedScrollView
       disableScale={true}
-      ForegroundComponent={<ForegroundComponent />}
-      headerMinHeight={isIOS ? 90 : 70}
-      OverflowHeaderComponent={<OverflowHeaderComponent />}
-      HeaderComponent={<Header />}
+      HeaderComponent={<ForegroundComponent />}
+      topBarHeight={isIOS ? 90 : 70}
+      OverflowNavbarComponent={<OverflowHeaderComponent />}
+      TopNavBarComponent={<Header />}
     >
       {data.map((e) => {
         return <Card item={e} key={e} />;
