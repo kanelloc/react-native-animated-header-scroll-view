@@ -9,7 +9,7 @@ export const ImageForegroundExample = () => {
     <AnimatedScrollView
       HeaderComponent={<ForegroundComponent />}
       topBarHeight={isIOS ? 90 : 70}
-      OverflowNavbarComponent={<OverflowHeaderComponent />}
+      HeaderNavbarComponent={<OverflowHeaderComponent />}
       TopNavBarComponent={<Header />}
       headerImage={require('../../assets/cabin.jpg')}
     >

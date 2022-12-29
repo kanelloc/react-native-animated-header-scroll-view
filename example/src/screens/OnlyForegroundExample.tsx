@@ -10,7 +10,7 @@ export const OnlyForegroundExample = () => {
       disableScale={true}
       HeaderComponent={<ForegroundComponent />}
       topBarHeight={isIOS ? 90 : 70}
-      OverflowNavbarComponent={<OverflowHeaderComponent />}
+      HeaderNavbarComponent={<OverflowHeaderComponent />}
       TopNavBarComponent={<Header />}
     >
       {data.map((e) => {

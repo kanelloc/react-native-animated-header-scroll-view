@@ -13,7 +13,7 @@ import { useAnimateScrollView } from '../hooks/useAnimateScrollView';
 
 export const AnimatedScrollView = ({
   TopNavBarComponent,
-  OverflowNavbarComponent,
+  HeaderNavbarComponent,
   HeaderComponent,
   headerMaxHeight,
   topBarHeight,
@@ -104,7 +104,7 @@ export const AnimatedScrollView = ({
         headerHeight={headerNavHeight}
         scroll={scroll}
         imageHeight={imageHeight}
-        OverflowHeaderComponent={OverflowNavbarComponent}
+        OverflowHeaderComponent={HeaderNavbarComponent}
         HeaderComponent={TopNavBarComponent}
       />
     </>

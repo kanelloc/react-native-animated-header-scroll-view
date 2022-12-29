@@ -8,7 +8,7 @@ export const OverflowHeaderExample = () => {
     <AnimatedScrollView
       headerMaxHeight={400}
       topBarHeight={isIOS ? 90 : 70}
-      OverflowNavbarComponent={<OverflowHeaderComponent />}
+      HeaderNavbarComponent={<OverflowHeaderComponent />}
       TopNavBarComponent={<Header />}
       headerImage={require('../../assets/cabin.jpg')}
     >

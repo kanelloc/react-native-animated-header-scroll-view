@@ -16,7 +16,7 @@ export interface AnimatedScrollViewProps extends ScrollViewProps {
   /**
    * Rendered on top of the header. Transitions to TopNavbarComponent as you scroll
    */
-  OverflowNavbarComponent?: JSX.Element;
+  HeaderNavbarComponent?: JSX.Element;
 
   /**
    * Height of the header (headerImage or HeaderComponent). Default value is 300
