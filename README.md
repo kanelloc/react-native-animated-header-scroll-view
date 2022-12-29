@@ -37,7 +37,9 @@ export const App = () => {
 };
 ```
 
-You can find a set of detailed examples [here](https://github.com/kanelloc/react-native-animated-header-scroll-view/tree/main/example).
+You can find a set of detailed examples [here](https://github.com/kanelloc/react-native-animated-header-scroll-view/tree/main/example)
+
+Also a running snack [here](https://snack.expo.dev/ukGomwbdE)
 
 # Props
 
