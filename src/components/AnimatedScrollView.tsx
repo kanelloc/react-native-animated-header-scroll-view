@@ -86,7 +86,7 @@ export const AnimatedScrollView = ({
             <Animated.Image
               source={headerImage}
               style={[
-                { height: imageHeight },
+                { height: imageHeight, width: width * 1.2 },
                 {
                   transform: [
                     { scale },
