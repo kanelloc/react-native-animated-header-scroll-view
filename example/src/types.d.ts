@@ -5,4 +5,5 @@ export type RootStackParamList = {
   SimpleExample: undefined;
   ImageForegroundExample: undefined;
   OnlyForegroundExample: undefined;
+  RefreshControlExample: undefined;
 };
