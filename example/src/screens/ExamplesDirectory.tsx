@@ -15,6 +15,7 @@ export const ExamplesDirectory = ({ navigation }: Props) => {
     { screen: SCREENS.SAFE_AREA_VIEW_EXAMPLE },
     { screen: SCREENS.IMAGE_FOREGROUND_EXAMPLE },
     { screen: SCREENS.ONLY_FOREGROUND_EXAMPLE },
+    { screen: SCREENS.REFRESH_CONTROL_EXAMPLE },
   ];
 
   return (
