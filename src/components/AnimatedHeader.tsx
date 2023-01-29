@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, StyleSheet, Animated } from 'react-native';
+import { StyleSheet, Animated } from 'react-native';
 import { useAnimateNavbar } from '../hooks/useAnimateNavbar';
 import type { AnimatedHeaderProps } from '../types';
 
@@ -18,11 +18,6 @@ const AnimatedHeader = ({
 
   return (
     <>
-      <StatusBar
-        barStyle={'dark-content'}
-        backgroundColor="transparent"
-        translucent
-      />
       <Animated.View
         style={[
           styles.container,
