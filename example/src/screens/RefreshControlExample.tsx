@@ -4,25 +4,21 @@ import { AnimatedScrollView } from '@kanelloc/react-native-animated-header-scrol
 import { data, isIOS } from '../utils';
 import { RefreshControl, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRefresh } from '@react-native-community/hooks';
 
-const wait = (timeout: any) => {
-  return new Promise((resolve) => setTimeout(resolve, timeout));
+const fetch = () => {
+  return new Promise((resolve) => setTimeout(resolve, 5000));
 };
 
 export const RefreshControlExample = () => {
-  const [refreshing, setRefreshing] = React.useState(false);
-
-  const onRefresh = React.useCallback(() => {
-    setRefreshing(true);
-    wait(2000).then(() => setRefreshing(false));
-  }, []);
+  const { isRefreshing, onRefresh } = useRefresh(fetch);
 
   return (
     <SafeAreaView style={styles.container} edges={['bottom']}>
       <AnimatedScrollView
         refreshControl={
           <RefreshControl
-            refreshing={refreshing}
+            refreshing={isRefreshing}
             onRefresh={onRefresh}
             style={styles.refresh}
             progressViewOffset={32} // Add offset to position correctly progressView in iOS
