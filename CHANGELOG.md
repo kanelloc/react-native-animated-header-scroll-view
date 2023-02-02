@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.10.1](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.10.0...v0.10.1) (2023-02-02)
+
 # [0.10.0](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.9.4...v0.10.0) (2023-02-02)
 
 
