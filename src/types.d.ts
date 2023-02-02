@@ -1,4 +1,4 @@
-import type { ScrollViewProps } from 'react-native';
+import type { ScrollViewProps, StyleProp, ViewStyle } from 'react-native';
 import { Animated, ImageSourcePropType } from 'react-native';
 
 export interface AnimatedScrollViewProps extends ScrollViewProps {
@@ -37,6 +37,11 @@ export interface AnimatedScrollViewProps extends ScrollViewProps {
    * Disables header scaling when scrolling
    */
   disableScale?: boolean;
+
+  /**
+   * Image styles
+   */
+  imageStyles?: StyleProp<ViewStyle>;
 }
 
 export interface AnimatedHeaderProps {
