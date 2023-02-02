@@ -1,4 +1,9 @@
-import type { ScrollViewProps, StyleProp, ViewStyle } from 'react-native';
+import type {
+  ImageStyle,
+  ScrollViewProps,
+  StyleProp,
+  ViewStyle,
+} from 'react-native';
 import { Animated, ImageSourcePropType } from 'react-native';
 
 export interface AnimatedScrollViewProps extends ScrollViewProps {
@@ -41,7 +46,7 @@ export interface AnimatedScrollViewProps extends ScrollViewProps {
   /**
    * Image styles
    */
-  imageStyles?: StyleProp<ViewStyle>;
+  imageStyles?: StyleProp<ImageStyle>;
 }
 
 export interface AnimatedHeaderProps {
