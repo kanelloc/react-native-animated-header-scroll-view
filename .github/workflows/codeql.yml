@@ -1,6 +1,10 @@
 name: "CodeQL"
 
-on: pull_request
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
 
 jobs:
   CodeQL-Build:
