@@ -43,16 +43,16 @@ Also a running snack [here](https://snack.expo.dev/ukGomwbdE)
 
 # Props
 
-| Prop name               | Description                                                                                                                 | Type                  | Required |
-|-------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------|----------|
-| `TopNavBarComponent`    | Rendered on top of the screen as a navbar when scrolling to the top                                                         | JSX.Element           | true     |
-| `HeaderComponent`       | A component to use on top of header image. It can also be used without header image to render a custom component as header. | JSX.Element           | false    |
-| `HeaderNavbarComponent` | Rendered on top of the header. Transitions to TopNavbarComponent as you scroll                                              | JSX.Element           | false    |
-| `headerMaxHeight`       | Height of the header (headerImage or HeaderComponent). Default value is 300                                                 | number                | false    |
-| `topBarHeight`          | Height of the top navbar. Default value is 90                                                                               | number                | false    |
-| `headerImage`           | Image header source                                                                                                         | ImageSourcePropType   | false    |
-| `disableScale`          | Disables header scaling when scrolling. Default value is false                                                              | boolean               | false    |
-| `imageStyles`           | Image styles                                                                                                                | StyleProp<ImageStyle> | false    |
+| Prop name                | Description                                                                                                                 | Type                  | Required |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------|----------|
+| `TopNavBarComponent`     | Rendered on top of the screen as a navbar when scrolling to the top                                                         | JSX.Element           | true     |
+| `HeaderComponent`        | A component to use on top of header image. It can also be used without header image to render a custom component as header. | JSX.Element           | false    |
+| `HeaderNavbarComponent`  | Rendered on top of the header. Transitions to TopNavbarComponent as you scroll                                              | JSX.Element           | false    |
+| `headerMaxHeight`        | Height of the header (headerImage or HeaderComponent). Default value is 300                                                 | number                | false    |
+| `topBarHeight`           | Height of the top navbar. Default value is 90                                                                               | number                | false    |
+| `headerImage`            | Image header source                                                                                                         | ImageSourcePropType   | false    |
+| `disableScale`           | Disables header scaling when scrolling. Default value is false                                                              | boolean               | false    |
+| `imageStyle`             | Image styles                                                                                                                | StyleProp<ImageStyle> | false    |
 
 
 
