@@ -1,11 +1,21 @@
-name: "Code Scanning - Action"
-on: [pull_request]
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ "main", develop ]
+  pull_request:
 
 jobs:
   CodeQL-Build:
+    name: Analyze
     runs-on: ubuntu-latest
     permissions:
       security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'javascript' ]
 
     steps:
       - name: Checkout repository
@@ -14,7 +24,9 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
-          languages: javascript
+          languages: ${{ matrix.language }}
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
+        with:
+          category: "/language:${{matrix.language}}"
