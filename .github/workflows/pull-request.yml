@@ -6,7 +6,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build_and_deploy:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
