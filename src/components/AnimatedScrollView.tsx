@@ -20,6 +20,7 @@ export const AnimatedScrollView = ({
   headerImage,
   disableScale,
   children,
+  imageStyles,
   ...props
 }: AnimatedScrollViewProps) => {
   const { width } = useWindowDimensions();
@@ -61,6 +62,7 @@ export const AnimatedScrollView = ({
                         { translateY: translateYDown },
                       ],
                     },
+                    imageStyles,
                   ]}
                 >
                   {HeaderComponent}
@@ -94,6 +96,7 @@ export const AnimatedScrollView = ({
                     { translateY: translateYDown },
                   ],
                 },
+                imageStyles,
               ]}
             />
           )}
