@@ -4,7 +4,7 @@ on:
     branches:
       - main
 jobs:
-  build_and_deploy:
+  Validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -36,6 +36,7 @@ jobs:
         run: yarn prepack
 
       - name: NPM release
+        if: "!contains(github.event.head_commit.message, 'chore')"
         run: yarn release-ci
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
