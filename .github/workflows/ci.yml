@@ -4,7 +4,7 @@ on:
     branches:
       - main
 jobs:
-  Validate:
+  Release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
