@@ -22,7 +22,7 @@ jobs:
         run: yarn typecheck
 
       - name: Run unit tests
-        if: "!contains(github.event.head_commit.message, 'chore')"
+        if: "!startsWith(github.event.head_commit.message, 'chore')"
         run: yarn test --maxWorkers=2 --coverage
 
       - name: Build package
