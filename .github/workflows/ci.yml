@@ -14,8 +14,8 @@ jobs:
 
       - name: git config
         run: |
-          git config user.name "kanelloc-deploy"
-          git config user.email "${{secrets.DEPLOY_EMAIL}}"
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
       - run: >
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
