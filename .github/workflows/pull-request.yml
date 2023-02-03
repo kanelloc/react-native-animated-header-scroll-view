@@ -8,6 +8,7 @@ concurrency:
 jobs:
   Validate:
     runs-on: ubuntu-latest
+    if: "!startsWith(github.event.head_commit.message, 'chore')"
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -22,7 +23,6 @@ jobs:
         run: yarn typecheck
 
       - name: Run unit tests
-        if: "!startsWith(github.event.head_commit.message, 'chore')"
         run: yarn test --maxWorkers=2 --coverage
 
       - name: Build package
