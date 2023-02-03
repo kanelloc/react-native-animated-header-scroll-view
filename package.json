@@ -1,6 +1,6 @@
 {
   "name": "@kanelloc/react-native-animated-header-scroll-view",
-  "version": "0.9.1",
+  "version": "0.10.4",
   "description": "React native animated header scroll view component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -57,6 +57,7 @@
     "@evilmartians/lefthook": "^1.2.2",
     "@react-native-community/eslint-config": "^3.0.2",
     "@release-it/conventional-changelog": "^5.0.0",
+    "@testing-library/react-hooks": "^8.0.1",
     "@types/jest": "^29.4.0",
     "@types/react": "~17.0.21",
     "@types/react-native": "0.70.0",
@@ -72,6 +73,7 @@
     "react": "18.1.0",
     "react-native": "0.70.5",
     "react-native-builder-bob": "^0.20.0",
+    "react-test-renderer": "^18.2.0",
     "release-it": "^15.0.0",
     "typescript": "^4.5.2"
   },

@@ -1,15 +1,21 @@
 import { RoundButton } from './RoundButton';
-import { StyleSheet, View } from 'react-native';
+import { StatusBar, StyleSheet, View } from 'react-native';
 import * as React from 'react';
 import ArrowLeft from '../icons/ArrowLeft';
 import { ArrowRight } from '../icons/ArrowRight';
 import { Share } from '../icons/Share';
 import { useNavigation } from '@react-navigation/native';
+import { isIOS } from '../utils';
 
 export const HeaderNavBar = () => {
   const nav = useNavigation();
   return (
     <View style={styles.container}>
+      <StatusBar
+        translucent
+        barStyle={isIOS ? 'dark-content' : 'light-content'}
+        backgroundColor="black"
+      />
       <RoundButton icon={<ArrowLeft />} onPress={nav.goBack} />
       <View style={styles.btnRightContainer}>
         <View style={styles.btnRight}>
