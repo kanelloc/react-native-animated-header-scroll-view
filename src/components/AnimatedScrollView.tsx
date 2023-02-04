@@ -108,7 +108,7 @@ export const AnimatedScrollView = ({
         scroll={scroll}
         imageHeight={imageHeight}
         OverflowHeaderComponent={HeaderNavbarComponent}
-        HeaderComponent={TopNavBarComponent}
+        TopNavbarComponent={TopNavBarComponent}
       />
     </>
   );

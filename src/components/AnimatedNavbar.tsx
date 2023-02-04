@@ -1,15 +1,15 @@
 import React from 'react';
 import { StyleSheet, Animated } from 'react-native';
 import { useAnimateNavbar } from '../hooks/useAnimateNavbar';
-import type { AnimatedHeaderProps } from '../types';
+import type { AnimatedNavbarProps } from '../types';
 
 const AnimatedNavbar = ({
   scroll,
   imageHeight,
   OverflowHeaderComponent,
-  HeaderComponent,
+  TopNavbarComponent,
   headerHeight,
-}: AnimatedHeaderProps) => {
+}: AnimatedNavbarProps) => {
   const [headerOpacity, overflowHeaderOpacity] = useAnimateNavbar(
     scroll,
     imageHeight,
@@ -29,7 +29,7 @@ const AnimatedNavbar = ({
           },
         ]}
       >
-        {HeaderComponent}
+        {TopNavbarComponent}
       </Animated.View>
       <Animated.View
         style={[

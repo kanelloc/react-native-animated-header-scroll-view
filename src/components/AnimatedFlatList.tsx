@@ -60,7 +60,7 @@ export const AnimatedFlatList = ({
         scroll={scroll}
         imageHeight={imageHeight}
         OverflowHeaderComponent={HeaderNavbarComponent}
-        HeaderComponent={TopNavBarComponent}
+        TopNavbarComponent={TopNavBarComponent}
       />
     </>
   );

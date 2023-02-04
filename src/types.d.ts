@@ -53,10 +53,10 @@ export type AnimatedScrollViewProps = AnimatedViewProps & ScrollViewProps;
 
 export type AnimatedFlatListViewProps = AnimatedViewProps & FlatListProps<any>;
 
-export type AnimatedHeaderProps = {
+export type AnimatedNavbarProps = {
   scroll: Animated.Value;
   OverflowHeaderComponent?: JSX.Element;
-  HeaderComponent?: JSX.Element;
+  TopNavbarComponent?: JSX.Element;
   imageHeight: number;
   headerHeight: number;
 };
