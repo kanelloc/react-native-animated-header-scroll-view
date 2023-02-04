@@ -1,6 +1,6 @@
 # React Native Animated Header ScrollView
 
-[![NPM version][npm-image]][npm-url] [![npm][license-url]][npm-url] [![npm][types-url]][npm-url] [![runs with expo][expo-image]][expo-url]
+[![NPM version][npm-image]][npm-url] [![npm][npm-downloads]][npm-url] [![npm][license-url]][npm-url] [![npm][types-url]][npm-url] [![runs with expo][expo-image]][expo-url]
 
 A performant animated ScrollView component that:
 * 🔥Animates an image or a custom component into a navbar header
@@ -70,3 +70,4 @@ MIT
 [types-url]: https://img.shields.io/badge/types-included-blue?style=flat-square
 [expo-image]: https://img.shields.io/badge/Runs%20with%20Expo-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000
 [expo-url]: https://expo.io
+[npm-downloads]: https://img.shields.io/npm/dm/@kanelloc/react-native-animated-header-scroll-view?style=flat-square
