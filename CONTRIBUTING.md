@@ -5,6 +5,10 @@ Contributions are always welcome, no matter how large or small!
 We want this community to be friendly and respectful to each other. Please follow it in all your interactions with the project. Before contributing, please read the [code of conduct](./CODE_OF_CONDUCT.md).
 
 ## Development workflow
+Project includes a `.nvmrc` file. If you use nvm just run
+```shell
+nvm use
+```
 
 To get started with the project, run `yarn` in the root directory to install the required dependencies for each package:
 
@@ -80,16 +84,6 @@ Our pre-commit hooks verify that your commit message matches this format when co
 We use [TypeScript](https://www.typescriptlang.org/) for type checking, [ESLint](https://eslint.org/) with [Prettier](https://prettier.io/) for linting and formatting the code, and [Jest](https://jestjs.io/) for testing.
 
 Our pre-commit hooks verify that the linter and tests pass when committing.
-
-### Publishing to npm
-
-We use [release-it](https://github.com/release-it/release-it) to make it easier to publish new versions. It handles common tasks like bumping version based on semver, creating tags and releases etc.
-
-To publish new versions, run the following:
-
-```sh
-yarn release
-```
 
 ### Scripts
 
