@@ -1,7 +1,7 @@
 import React from 'react';
 import { Animated, StyleSheet, useWindowDimensions, View } from 'react-native';
 import type { AnimatedFlatListViewProps } from '../types';
-import AnimatedHeader from './AnimatedHeader';
+import AnimatedNavbar from './AnimatedNavbar';
 import { HEADER_HEIGHT, IMG_HEADER_HEIGHT } from '../constants';
 import { useAnimateScrollView } from '../hooks/useAnimateScrollView';
 
@@ -55,7 +55,7 @@ export const AnimatedFlatList = ({
         onScroll={onScroll}
         ListHeaderComponent={ListHeader}
       />
-      <AnimatedHeader
+      <AnimatedNavbar
         headerHeight={headerNavHeight}
         scroll={scroll}
         imageHeight={imageHeight}

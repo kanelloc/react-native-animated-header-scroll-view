@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import React from 'react';
 import { HEADER_HEIGHT, IMG_HEADER_HEIGHT } from '../constants';
-import AnimatedHeader from './AnimatedHeader';
+import AnimatedNavbar from './AnimatedNavbar';
 import type { AnimatedScrollViewProps } from '../types';
 import { useAnimateScrollView } from '../hooks/useAnimateScrollView';
 
@@ -103,7 +103,7 @@ export const AnimatedScrollView = ({
         </View>
         {children}
       </Animated.ScrollView>
-      <AnimatedHeader
+      <AnimatedNavbar
         headerHeight={headerNavHeight}
         scroll={scroll}
         imageHeight={imageHeight}

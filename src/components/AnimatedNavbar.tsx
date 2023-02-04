@@ -3,7 +3,7 @@ import { StyleSheet, Animated } from 'react-native';
 import { useAnimateNavbar } from '../hooks/useAnimateNavbar';
 import type { AnimatedHeaderProps } from '../types';
 
-const AnimatedHeader = ({
+const AnimatedNavbar = ({
   scroll,
   imageHeight,
   OverflowHeaderComponent,
@@ -68,4 +68,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AnimatedHeader;
+export default AnimatedNavbar;
