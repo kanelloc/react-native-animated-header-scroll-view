@@ -60,3 +60,13 @@ export type AnimatedNavbarProps = {
   imageHeight: number;
   headerHeight: number;
 };
+
+export type AnimatedHeaderProps = {
+  imageHeight: number;
+  translateYUp: Animated.AnimatedInterpolation<string | number>;
+  translateYDown: Animated.AnimatedInterpolation<string | number>;
+  scale: Animated.AnimatedInterpolation<string | number> | 1;
+  imageStyle?: StyleProp<ImageStyle>;
+  HeaderComponent?: JSX.Element;
+  headerImage?: ImageSourcePropType;
+};
