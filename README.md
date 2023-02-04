@@ -2,11 +2,11 @@
 
 [![NPM version][npm-image]][npm-url] [![npm][npm-downloads]][npm-url] [![npm][license-url]][npm-url] [![npm][types-url]][npm-url] [![runs with expo][expo-image]][expo-url]
 
-A performant animated scroll view components that:
-* 🔥Supports `FlatList` and `ScrollView` scrolling interactions.
-* 🔥Animates an image or a custom component into a navbar header
-* 🔥Supports bounce animation on scroll down
-* 🔥Supports both iOS and Android devices
+Performant animated scroll view components that:
+* 🔥Support `FlatList` and `ScrollView` scrolling interactions.
+* 🔥Animate an image or a custom component into a navbar header
+* 🔥Support bounce animation on scroll down
+* 🔥Support both iOS and Android devices
 
 ![React Native Animated Header ScrollView](./preview-ios.gif)
 
