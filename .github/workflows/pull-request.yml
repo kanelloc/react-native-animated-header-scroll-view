@@ -21,8 +21,7 @@ jobs:
       - name: Typecheck files
         run: yarn typecheck
 
-      - name: Run unit tests 1
-        if: ${{ startsWith(github.event.head_commit.message, 'feat') }}
+      - name: Run unit tests
         run: yarn test --maxWorkers=2 --coverage
 
       - name: Build package

@@ -13,6 +13,7 @@ jobs:
           fetch-depth: 0
 
       - name: git config
+        if: ${{ (startsWith(github.event.head_commit.message, 'feat')) || (startsWith(github.event.head_commit.message, 'fix')) }}
         run: |
           git config user.name "kanelloc"
           git config user.email "kanelloc@users.noreply.github.com"
@@ -36,6 +37,7 @@ jobs:
         run: yarn prepack
 
       - name: NPM release
+        if: ${{ (startsWith(github.event.head_commit.message, 'feat')) || (startsWith(github.event.head_commit.message, 'fix')) }}
         run: yarn release-ci
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
