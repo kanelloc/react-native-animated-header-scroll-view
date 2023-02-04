@@ -22,7 +22,7 @@ jobs:
         run: yarn typecheck
 
       - name: Run unit tests
-        if: ${{ startsWith(github.event.head_commit.message, 'feat') }}
+        if: ${{ !startsWith(github.event.head_commit.message, 'feat') }}
         run: yarn test --maxWorkers=2 --coverage
 
       - name: Build package
