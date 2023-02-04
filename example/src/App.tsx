@@ -9,6 +9,7 @@ import type { RootStackParamList } from './types';
 import { ImageForegroundExample } from './screens/ImageForegroundExample';
 import { OnlyForegroundExample } from './screens/OnlyForegroundExample';
 import { RefreshControlExample } from './screens/RefreshControlExample';
+import { HeaderNavbarFlatListExample } from './screens/HeaderNavbarFlatListExample';
 
 const App = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -40,6 +41,10 @@ const App = () => {
           <Stack.Screen
             name="RefreshControlExample"
             component={RefreshControlExample}
+          />
+          <Stack.Screen
+            name="HeaderNavbarFlatListExample"
+            component={HeaderNavbarFlatListExample}
           />
         </Stack.Navigator>
       </NavigationContainer>

@@ -5,4 +5,5 @@ export enum SCREENS {
   IMAGE_FOREGROUND_EXAMPLE = 'ImageForegroundExample',
   ONLY_FOREGROUND_EXAMPLE = 'OnlyForegroundExample',
   REFRESH_CONTROL_EXAMPLE = 'RefreshControlExample',
+  HEADER_NAVBAR_FLATLIST_EXAMPLE = 'HeaderNavbarFlatListExample',
 }
