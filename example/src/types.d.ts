@@ -6,5 +6,5 @@ export type RootStackParamList = {
   ImageForegroundExample: undefined;
   OnlyForegroundExample: undefined;
   RefreshControlExample: undefined;
-  HeaderNavbarFlatListExample: undefined
+  HeaderNavbarFlatListExample: undefined;
 };
