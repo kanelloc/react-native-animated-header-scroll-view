@@ -125,14 +125,6 @@
             {
               "type": "fix",
               "section": "Bug Fixes"
-            },
-            {
-              "type": "chore",
-              "section": "Chore"
-            },
-            {
-              "type": "docs",
-              "section": "Docs"
             }
           ]
         }
