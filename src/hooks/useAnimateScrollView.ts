@@ -34,7 +34,7 @@ export const useAnimateScrollView = (
     scroll,
     onScroll,
     disableScale ? 1 : scale,
-    translateYDown,
-    translateYUp,
+    disableScale ? 0 : translateYDown,
+    disableScale ? 0 : translateYUp,
   ] as const;
 };
