@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.1](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.11.0...v0.11.1) (2023-02-05)
+
+
+### Bug Fixes
+
+* bypass translations when disableScale is enabled ([#35](https://github.com/kanelloc/react-native-animated-header-scroll-view/issues/35)) ([53066d6](https://github.com/kanelloc/react-native-animated-header-scroll-view/commit/53066d6a8961c6c8b99eca95f3015bc00e671626))
+
 # [0.11.0](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.10.4...v0.11.0) (2023-02-05)
 
 
