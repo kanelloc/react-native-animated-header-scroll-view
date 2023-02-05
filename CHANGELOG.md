@@ -14,7 +14,7 @@
 
 * add image style prop ([#25](https://github.com/kanelloc/react-native-animated-header-scroll-view/issues/25)) ([01682b7](https://github.com/kanelloc/react-native-animated-header-scroll-view/commit/01682b7eca81e350c2a7cd5e586e9a44b06e87b6))
 
-## [0.9.3](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.9.2...v0.9.3) (2023-01-29)
+# [0.9.3](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.9.2...v0.9.3) (2023-01-29)
 
 
 ### Bug Fixes
