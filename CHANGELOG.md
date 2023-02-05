@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.11.0](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.10.4...v0.11.0) (2023-02-05)
+
+
+### Features
+
+* New <AnimatedFlatList/> component ([#34](https://github.com/kanelloc/react-native-animated-header-scroll-view/issues/34)) ([92a02bd](https://github.com/kanelloc/react-native-animated-header-scroll-view/commit/92a02bd045e50221e1095d55d358a307e1905d26))
+
 ## [0.10.4](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.10.3...v0.10.4) (2023-02-03)
 
 ## [0.10.3](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.10.1...v0.10.3) (2023-02-02)
