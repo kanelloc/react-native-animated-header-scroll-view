@@ -2,10 +2,11 @@
 
 [![NPM version][npm-image]][npm-url] [![npm][npm-downloads]][npm-url] [![npm][license-url]][npm-url] [![npm][types-url]][npm-url] [![runs with expo][expo-image]][expo-url]
 
-A performant animated ScrollView component that:
-* 🔥Animates an image or a custom component into a navbar header
-* 🔥Supports bounce animation on scroll down
-* 🔥Supports both iOS and Android devices
+Performant animated scroll view components that:
+* 🔥Support `FlatList` and `ScrollView` scrolling interactions.
+* 🔥Animate an image or a custom component into a navbar header
+* 🔥Support bounce animation on scroll down
+* 🔥Support both iOS and Android devices
 
 ![React Native Animated Header ScrollView](./preview-ios.gif)
 
@@ -33,6 +34,33 @@ export const App = () => {
         return <Card item={e} key={e} />;
       })}
     </AnimatedScrollView>
+  );
+};
+```
+
+```typescript
+import { Card, TopNavBar, HeaderNavBar } from '../components';
+import { AnimatedScrollView } from '@kanelloc/react-native-animated-header-scroll-view';
+import * as React from 'react';
+
+export const App = () => {
+  const data = Array.from(Array(20).keys());
+  const renderItem = ({ item }: any) => {
+    return (
+      <View>
+        <Card item={item} />
+      </View>
+    );
+  };
+
+  return (
+    <AnimatedFlatList
+      headerImage={require('../../assets/cabin.jpg')}
+      data={data}
+      renderItem={renderItem}
+      HeaderNavbarComponent={<HeaderNavBar />}
+      TopNavBarComponent={<TopNavBar />}
+    />
   );
 };
 ```

@@ -1,23 +1,22 @@
-import { Animated } from 'react-native';
 import React from 'react';
-import { HEADER_HEIGHT, IMG_HEADER_HEIGHT } from '../constants';
+import { Animated } from 'react-native';
+import type { AnimatedFlatListViewProps } from '../types';
 import AnimatedNavbar from './AnimatedNavbar';
-import type { AnimatedScrollViewProps } from '../types';
+import { HEADER_HEIGHT, IMG_HEADER_HEIGHT } from '../constants';
 import { useAnimateScrollView } from '../hooks/useAnimateScrollView';
 import { AnimatedHeader } from './AnimatedHeader';
 
-export const AnimatedScrollView = ({
-  TopNavBarComponent,
-  HeaderNavbarComponent,
-  HeaderComponent,
+export const AnimatedFlatList = ({
   headerMaxHeight,
   topBarHeight,
-  headerImage,
   disableScale,
-  children,
+  TopNavBarComponent,
+  HeaderNavbarComponent,
+  headerImage,
   imageStyle,
+  HeaderComponent,
   ...props
-}: AnimatedScrollViewProps) => {
+}: AnimatedFlatListViewProps) => {
   const imageHeight = headerMaxHeight || IMG_HEADER_HEIGHT;
   const headerNavHeight = topBarHeight || HEADER_HEIGHT;
   const [scroll, onScroll, scale, translateYDown, translateYUp] =
@@ -25,22 +24,21 @@ export const AnimatedScrollView = ({
 
   return (
     <>
-      <Animated.ScrollView
-        onScroll={onScroll}
-        scrollEventThrottle={16}
+      <Animated.FlatList
         {...props}
-      >
-        <AnimatedHeader
-          HeaderComponent={HeaderComponent}
-          headerImage={headerImage}
-          imageStyle={imageStyle}
-          imageHeight={imageHeight}
-          translateYDown={translateYDown}
-          translateYUp={translateYUp}
-          scale={scale}
-        />
-        {children}
-      </Animated.ScrollView>
+        onScroll={onScroll}
+        ListHeaderComponent={
+          <AnimatedHeader
+            HeaderComponent={HeaderComponent}
+            headerImage={headerImage}
+            imageStyle={imageStyle}
+            imageHeight={imageHeight}
+            translateYDown={translateYDown}
+            translateYUp={translateYUp}
+            scale={scale}
+          />
+        }
+      />
       <AnimatedNavbar
         headerHeight={headerNavHeight}
         scroll={scroll}

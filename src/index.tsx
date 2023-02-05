@@ -1,1 +1,1 @@
-export { AnimatedScrollView } from './components/AnimatedScrollView';
+export { AnimatedScrollView, AnimatedFlatList } from './components';
