@@ -12,7 +12,7 @@ export const HeaderComponent = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'tomato',
+    backgroundColor: 'transparent',
     alignItems: 'center',
     justifyContent: 'center',
   },
