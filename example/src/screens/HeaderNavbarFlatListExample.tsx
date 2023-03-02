@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { RefreshControl, StyleSheet, View } from 'react-native';
+import { useRef } from 'react';
+import { FlatList, RefreshControl, StyleSheet, View } from 'react-native';
 import { AnimatedFlatList } from '@kanelloc/react-native-animated-header-scroll-view';
 import { data } from '../utils';
 import { Card, HeaderNavBar, TopNavBar } from '../components';
@@ -10,6 +11,7 @@ const fetch = () => {
 };
 export const HeaderNavbarFlatListExample = () => {
   const { isRefreshing, onRefresh } = useRefresh(fetch);
+  const scrollRef = useRef<FlatList>(null);
   const renderItem = ({ item }: any) => {
     return (
       <View>
@@ -21,6 +23,7 @@ export const HeaderNavbarFlatListExample = () => {
   return (
     <View>
       <AnimatedFlatList
+        ref={scrollRef}
         refreshControl={
           <RefreshControl
             refreshing={isRefreshing}
