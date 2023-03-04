@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.12.0](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.11.1...v0.12.0) (2023-03-04)
+
+
+### Features
+
+* Enable ref forwarding ([#47](https://github.com/kanelloc/react-native-animated-header-scroll-view/issues/47)) ([581c87f](https://github.com/kanelloc/react-native-animated-header-scroll-view/commit/581c87f62711ffbc90e177d8c4404eedbeb26fd7))
+
 ## [0.11.1](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.11.0...v0.11.1) (2023-02-05)
 
 
