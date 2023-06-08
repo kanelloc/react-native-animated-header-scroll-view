@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Animated } from 'react-native';
+import { StyleSheet, Animated, useColorScheme } from 'react-native';
 import { useAnimateNavbar } from '../hooks/useAnimateNavbar';
 import type { AnimatedNavbarProps } from '../types';
 
@@ -9,23 +9,28 @@ const AnimatedNavbar = ({
   OverflowHeaderComponent,
   TopNavbarComponent,
   headerHeight,
+  headerBackgroundColor,
+  borderBottomColor
 }: AnimatedNavbarProps) => {
   const [headerOpacity, overflowHeaderOpacity] = useAnimateNavbar(
     scroll,
     imageHeight,
-    headerHeight
+    headerHeight,
   );
+  const colorScheme = useColorScheme();
 
   return (
     <>
       <Animated.View
         style={[
           styles.container,
-          styles.header,
           {
             zIndex: headerOpacity,
             height: headerHeight,
             opacity: headerOpacity,
+            backgroundColor: headerBackgroundColor = colorScheme == 'light' ? '#fff' : '#121212',
+            borderBottomWidth: StyleSheet.hairlineWidth,
+            borderBottomColor: borderBottomColor= colorScheme == 'light' ? 'rgb(216, 216, 216)' : '#222',
           },
         ]}
       >
@@ -55,13 +60,8 @@ const styles = StyleSheet.create({
     elevation: 2,
     top: 0,
     width: '100%',
-    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  header: {
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: '#a4a4a4',
   },
   overflowHeader: {
     backgroundColor: 'transparent',
