@@ -47,6 +47,20 @@ type AnimatedViewProps = {
    * Image styles
    */
   imageStyle?: StyleProp<ImageStyle>;
+
+  /**
+   * Header background color
+   * @default '#fff'
+   * @dark '#121212'
+   */
+  headerBackgroundColor?: string;
+
+  /**
+   * Header border bottom color
+   * @default 'rgb(216, 216, 216)'
+   */
+  borderBottomColor?: string;
+
 };
 
 export type AnimatedScrollViewProps = AnimatedViewProps & ScrollViewProps;
@@ -59,6 +73,8 @@ export type AnimatedNavbarProps = {
   TopNavbarComponent?: JSX.Element;
   imageHeight: number;
   headerHeight: number;
+  headerBackgroundColor?: string;
+  borderBottomColor?: string;
 };
 
 export type AnimatedHeaderProps = {
