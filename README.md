@@ -78,6 +78,8 @@ Also a running snack [here](https://snack.expo.dev/ukGomwbdE)
 | `HeaderNavbarComponent`  | Rendered on top of the header. Transitions to TopNavbarComponent as you scroll                                              | JSX.Element           | false    |
 | `headerMaxHeight`        | Height of the header (headerImage or HeaderComponent). Default value is 300                                                 | number                | false    |
 | `topBarHeight`           | Height of the top navbar. Default value is 90                                                                               | number                | false    |
+| `headerBackgroundColor`  | Background color of the top navbar. Default value is '#fff' for lightmode and '#121212' for darkmode                        | string                | false    |
+| `borderBottomColor`      | Color of the bottom border of the top navbar. Default value is 'rgb(216, 216, 216)' for lightmode and '#222' for darkmode.  | string                | false    |
 | `headerImage`            | Image header source                                                                                                         | ImageSourcePropType   | false    |
 | `disableScale`           | Disables header scaling when scrolling. Default value is false                                                              | boolean               | false    |
 | `imageStyle`             | Image styles                                                                                                                | StyleProp<ImageStyle> | false    |
