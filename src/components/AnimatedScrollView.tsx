@@ -21,6 +21,8 @@ export const AnimatedScrollView = forwardRef<
       disableScale,
       children,
       imageStyle,
+      headerBackgroundColor,
+      borderBottomColor,
       ...props
     }: AnimatedScrollViewProps,
     ref
@@ -55,6 +57,8 @@ export const AnimatedScrollView = forwardRef<
           imageHeight={imageHeight}
           OverflowHeaderComponent={HeaderNavbarComponent}
           TopNavbarComponent={TopNavBarComponent}
+          headerBackgroundColor={headerBackgroundColor}
+          borderBottomColor={borderBottomColor}
         />
       </>
     );
