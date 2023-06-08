@@ -30,7 +30,7 @@ const AnimatedNavbar = ({
             opacity: headerOpacity,
             backgroundColor: headerBackgroundColor = colorScheme == 'light' ? '#fff' : '#121212',
             borderBottomWidth: StyleSheet.hairlineWidth,
-            borderBottomColor: borderBottomColor= colorScheme == 'light' ? 'rgb(216, 216, 216)' : '#222',
+            borderBottomColor: borderBottomColor = colorScheme == 'light' ? 'rgb(216, 216, 216)' : '#222',
           },
         ]}
       >
