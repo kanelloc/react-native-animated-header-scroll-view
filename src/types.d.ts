@@ -34,6 +34,11 @@ type AnimatedViewProps = {
   topBarHeight?: number;
 
   /**
+   * [ANDROID ONLY] Elevation of the top navbar. Default value is 0
+   */
+  topBarElevation?: number;
+
+  /**
    * @see https://reactnative.dev/docs/image#source
    */
   headerImage?: ImageSourcePropType;
@@ -59,6 +64,7 @@ export type AnimatedNavbarProps = {
   TopNavbarComponent?: JSX.Element;
   imageHeight: number;
   headerHeight: number;
+  headerElevation: number;
 };
 
 export type AnimatedHeaderProps = {

@@ -12,7 +12,7 @@ export const HeaderNavBarExample = () => {
     <AnimatedScrollView
       ref={scrollRef}
       headerMaxHeight={400}
-      topBarHeight={isIOS ? 90 : 70}
+      topBarHeight={isIOS ? 90 : 80}
       HeaderNavbarComponent={<HeaderNavBar />}
       TopNavBarComponent={<TopNavBar />}
       headerImage={require('../../assets/cabin.jpg')}
