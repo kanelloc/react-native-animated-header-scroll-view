@@ -17,6 +17,7 @@ export const AnimatedScrollView = forwardRef<
       HeaderComponent,
       headerMaxHeight,
       topBarHeight,
+      topBarElevation,
       headerImage,
       disableScale,
       children,
@@ -27,6 +28,7 @@ export const AnimatedScrollView = forwardRef<
   ) => {
     const imageHeight = headerMaxHeight || IMG_HEADER_HEIGHT;
     const headerNavHeight = topBarHeight || HEADER_HEIGHT;
+    const headerElevation = topBarElevation || 0;
     const [scroll, onScroll, scale, translateYDown, translateYUp] =
       useAnimateScrollView(imageHeight, disableScale);
 
@@ -50,6 +52,7 @@ export const AnimatedScrollView = forwardRef<
           {children}
         </Animated.ScrollView>
         <AnimatedNavbar
+          headerElevation={headerElevation}
           headerHeight={headerNavHeight}
           scroll={scroll}
           imageHeight={imageHeight}

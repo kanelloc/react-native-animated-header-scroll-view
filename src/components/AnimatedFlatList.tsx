@@ -11,6 +11,7 @@ export const AnimatedFlatList = forwardRef<FlatList, AnimatedFlatListViewProps>(
     {
       headerMaxHeight,
       topBarHeight,
+      topBarElevation,
       disableScale,
       TopNavBarComponent,
       HeaderNavbarComponent,
@@ -23,6 +24,7 @@ export const AnimatedFlatList = forwardRef<FlatList, AnimatedFlatListViewProps>(
   ) => {
     const imageHeight = headerMaxHeight || IMG_HEADER_HEIGHT;
     const headerNavHeight = topBarHeight || HEADER_HEIGHT;
+    const headerElevation = topBarElevation || 0;
     const [scroll, onScroll, scale, translateYDown, translateYUp] =
       useAnimateScrollView(imageHeight, disableScale);
 
@@ -45,6 +47,7 @@ export const AnimatedFlatList = forwardRef<FlatList, AnimatedFlatListViewProps>(
           }
         />
         <AnimatedNavbar
+          headerElevation={headerElevation}
           headerHeight={headerNavHeight}
           scroll={scroll}
           imageHeight={imageHeight}
