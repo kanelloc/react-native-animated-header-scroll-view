@@ -1,5 +1,15 @@
 # Changelog
 
+# [1.0.0](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.12.0...v1.0.0) (2023-09-02)
+
+
+* feat!: make navbar opts more robust (#62) ([cbe08ec](https://github.com/kanelloc/react-native-animated-header-scroll-view/commit/cbe08ec924ece38c4f830081b11f09d12fac3d6d)), closes [#62](https://github.com/kanelloc/react-native-animated-header-scroll-view/issues/62)
+
+
+### BREAKING CHANGES
+
+* Default paddingTop, borderBottomWidth & borderBottomColor have moved from the wrapper header component to the component provided from the user/dev
+
 # [0.12.0](https://github.com/kanelloc/react-native-animated-header-scroll-view/compare/v0.11.1...v0.12.0) (2023-03-04)
 
 
