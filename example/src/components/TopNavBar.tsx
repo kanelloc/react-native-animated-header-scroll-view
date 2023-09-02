@@ -9,7 +9,7 @@ export const TopNavBar = () => {
   const nav = useNavigation();
   return (
     <View style={styles.container}>
-      <View style={{ width: width / 3 }}>
+      <View style={[{ width: width / 3 }, styles.leftContainer]}>
         <RoundButton icon={<ArrowLeft />} onPress={nav.goBack} />
       </View>
       <View
@@ -30,9 +30,17 @@ export const TopNavBar = () => {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    paddingHorizontal: 8,
+    height: '100%',
+    alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    paddingTop: 32,
+    borderBottomColor: '#a4a4a4',
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    backgroundColor: 'tomato',
+  },
+  leftContainer: {
+    paddingLeft: 8,
   },
   titleContainer: {
     alignItems: 'center',
