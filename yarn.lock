@@ -1199,12 +1199,13 @@
     resolve-global "1.0.0"
     yargs "^17.0.0"
 
-"@commitlint/config-conventional@^17.0.2":
-  version "17.3.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-17.3.0.tgz#77bcfabfed932bc80e97f31f2201ba05f504e145"
-  integrity sha512-hgI+fN5xF8nhS9uG/V06xyT0nlcyvHHMkq0kwRSr96vl5BFlRGaL2C0/YY4kQagfU087tmj01bJkG9Ek98Wllw==
+"@commitlint/config-conventional@^18.6.2":
+  version "18.6.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-18.6.2.tgz#617f3ee761578040cade530631058699642cbd78"
+  integrity sha512-PcgSYg1AKGQIwDQKbaHtJsfqYy4uJTC7crLVZ83lfjcPaec4Pry2vLeaWej7ao2KsT20l9dWoMPpEGg8LWdUuA==
   dependencies:
-    conventional-changelog-conventionalcommits "^5.0.0"
+    "@commitlint/types" "^18.6.1"
+    conventional-changelog-conventionalcommits "^7.0.2"
 
 "@commitlint/config-validator@^17.4.0":
   version "17.4.0"
@@ -1341,6 +1342,13 @@
   version "17.4.0"
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-17.4.0.tgz#c7c2b97b959f6175c164632bf26208ce417b3f31"
   integrity sha512-2NjAnq5IcxY9kXtUeO2Ac0aPpvkuOmwbH/BxIm36XXK5LtWFObWJWjXOA+kcaABMrthjWu6la+FUpyYFMHRvbA==
+  dependencies:
+    chalk "^4.1.0"
+
+"@commitlint/types@^18.6.1":
+  version "18.6.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-18.6.1.tgz#7eb3ab2d799d9166fbb98b96b0744581e59a4ad4"
+  integrity sha512-gwRLBLra/Dozj2OywopeuHj2ac26gjGkz2cZ+86cTJOdtWfiRRr4+e77ZDAGc6MDWxaWheI+mAV5TLWWRwqrFg==
   dependencies:
     chalk "^4.1.0"
 
@@ -3531,14 +3539,12 @@ conventional-changelog-conventionalcommits@^4.5.0:
     lodash "^4.17.15"
     q "^1.5.1"
 
-conventional-changelog-conventionalcommits@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-5.0.0.tgz#41bdce54eb65a848a4a3ffdca93e92fa22b64a86"
-  integrity sha512-lCDbA+ZqVFQGUj7h9QBKoIpLhl8iihkO0nCTyRNzuXtcd7ubODpYB04IFy31JloiJgG0Uovu8ot8oxRzn7Nwtw==
+conventional-changelog-conventionalcommits@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-7.0.2.tgz#aa5da0f1b2543094889e8cf7616ebe1a8f5c70d5"
+  integrity sha512-NKXYmMR/Hr1DevQegFB4MwfM5Vv0m4UIxKZTTYuD98lpTknaZlSRrDOG4X7wIXpGkfsYxZTghUN+Qq+T0YQI7w==
   dependencies:
     compare-func "^2.0.0"
-    lodash "^4.17.15"
-    q "^1.5.1"
 
 conventional-changelog-core@^4.2.1:
   version "4.2.4"
